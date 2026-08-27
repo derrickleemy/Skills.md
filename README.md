@@ -78,6 +78,15 @@ from the Atlassian MCP server, so they work with any MCP-capable agent. `gh` and
 `work/` skills also carry Jira and GitHub assumptions beyond the harness —
 `work/README.md` covers those.
 
+## Tools I use alongside these
+
+Skills cover the *procedure*. These cover the parts of the loop Claude Code isn't:
+
+| Tool | What it does | Where it fits |
+|---|---|---|
+| [crit](https://github.com/tomasz-tomczyk/crit) | Review plans, diffs and live pages in a browser UI, leave inline comments, send them straight back to the agent | The human review gate — instead of reading a plan in the terminal and typing paragraphs of feedback, comment on the line you mean. Pairs with `/plan-handover`'s approval step |
+| [NotebookLM](https://notebooklm.google.com) | Upload sources, ask questions grounded only in them, audio overviews | Reading-in before a plan exists — dump the RFCs, vendor docs and meeting transcripts in, interrogate them there, then bring the conclusions into `/plan-brief` |
+
 ## Use
 
 Claude picks a skill up on its own when your request matches the description — that's
